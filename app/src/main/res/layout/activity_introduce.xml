@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".IntroduceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_avataShop"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_cua_hang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView_avataShop"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Soccer\nShoes"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soccer Shoes Shop"
+            android:textColor="#FF0CD7E2"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:padding="4dp"
+                android:text="Số điện thoại"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_numberPhoneShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="100dp"
+                android:padding="4dp"
+                android:text="0798631497"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView_toPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="200dp"
+                android:drawableRight="@drawable/icon_to_phone"
+                android:padding="4dp"
+                android:text="Gọi ngay "
+                android:textColor="#42B72A"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:padding="4dp"
+                android:text="Địa chỉ"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_addressToGoogleMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="100dp"
+                android:padding="4dp"
+                android:text="Chung cư Lavita Garden-17 đường số 3, phường Trường Thọ, thành phố Thủ Đức, thành phố Hồ Chí Minh"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cửa hàng SSS chúng tôi chính thức mở bán vào năm 2015 và đã được sự ủng hộ đông đảo của quý khách nên chỉ sau đó 1 năm chúng tôi đã kết họp với Công ty NNN cho ra mắt ứng dụng đặt mua giày dành riêng cho quý khách hàng."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cửa hàng Soccer Shoes Shop cung cấp nhiều mẫu sản phẩm đa dạng của các hãng giày nổi tiếng phù hợp với điều kiện cỏ nhân tạo và cỏ thật, như Nike, Adidas, Mizuno, Puma, Kamito, Mitre, Akka, Jogabola, Pan, Zocker, Bitis,... Trong những năm qua, SSS đã đạt được sự tín nhiệm của khách hàng nhờ vào chất lượng sản phẩm và chất lượng phục vụ khách hàng. Niềm tin này càng được khẳng định khi SSS liên tiếp đạt các giải:"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/icon_check_red"
+            android:text="Hàng Việt Nam Chất Lượng cao từ năm 2015 đến nay"
+            android:textColor="#ee1b21"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/icon_check_red"
+            android:text="Thương hiệu ấn tượng năm 2016, do báo Sài Gòn Tiếp Thị chứng nhận."
+            android:textColor="#ee1b21"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Được sự ủng hộ và tin tưởng của khách hàng, Soccer Shoes Shop đã không ngừng mở rộng phạm vi hoạt động và thành lập nhiều cửa hàng trên toàn thành phố Hồ Chí Minh và cả nước nhằm nâng cao chất lương phục vụ, đưa sản phẩm đến tay người tiêu dùng mọi lúc mọi nơi."
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:padding="8dp"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/button_backAtIntroduce"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_circle_button"
+            android:src="@drawable/icon_back_black" />
+
+    </RelativeLayout>
+
+</FrameLayout>

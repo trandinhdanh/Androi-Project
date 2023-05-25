@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfomationProductActivity"
+    android:background="#d9f0f8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager_slideImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/circleIndicator_slideImage"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp" />
+
+
+            <ImageButton
+                android:id="@+id/button_love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:background="@null"
+                android:src="@drawable/icon_love_on_red" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_nameProductAtInfomation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên sản phẩm"
+                    android:textSize="28sp"
+                    android:textColor="#2f3859"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView_TheFirmAtInfomation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hãng"
+                    android:textColor="#FF0CD7E2"
+                    android:textStyle="italic"/>
+
+
+                <TextView
+                    android:id="@+id/textView_noteAtInfomation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mô tả"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/textView_priceProductAtInfomation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="-8dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_toStartOf="@+id/textView_TypePriceProductAtInfomation"
+                        android:padding="6dp"
+                        android:text="Giá"
+                        android:textColor="#ee4d2d"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView_TypePriceProductAtInfomation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="0dp"
+                        android:padding="6dp"
+                        android:text=".đ"
+                        android:textColor="#ee4d2d"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/button_eye"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_circle_button"
+                android:src="@drawable/icon_eye" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:text="Miễn phí vẫn chuyển"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miễn phí vẫn chuyển cho mọi đơn hàng"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"/>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@null"
+                android:src="@drawable/img_freeship" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soccer Shoes Shop"
+                android:textColor="#FF0CD7E2"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cửa hàng SSS chúng tôi chính thức mở bán vào năm 2015 và đã được sự ủng hộ đông đảo của quý khách nên chỉ sau đó 1 năm chúng tôi đã kết họp với Công ty NNN cho ra mắt ứng dụng đặt mua giày dành riêng cho quý khách hàng."
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cửa hàng Soccer Shoes Shop cung cấp nhiều mẫu sản phẩm đa dạng của các hãng giày nổi tiếng phù hợp với điều kiện cỏ nhân tạo và cỏ thật, như Nike, Adidas, Mizuno, Puma, Kamito, Mitre, Akka, Jogabola, Pan, Zocker, Bitis,... Trong những năm qua, SSS đã đạt được sự tín nhiệm của khách hàng nhờ vào chất lượng sản phẩm và chất lượng phục vụ khách hàng. Niềm tin này càng được khẳng định khi SSS liên tiếp đạt các giải:"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/icon_check_red"
+                android:text="Hàng Việt Nam Chất Lượng cao từ năm 2015 đến nay"
+                android:textColor="#ee1b21"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/icon_check_red"
+                android:text="Thương hiệu ấn tượng năm 2016, do báo Sài Gòn Tiếp Thị chứng nhận."
+                android:textColor="#ee1b21"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="Được sự ủng hộ và tin tưởng của khách hàng, Soccer Shoes Shop đã không ngừng mở rộng phạm vi hoạt động và thành lập nhiều cửa hàng trên toàn thành phố Hồ Chí Minh và cả nước nhằm nâng cao chất lương phục vụ, đưa sản phẩm đến tay người tiêu dùng mọi lúc mọi nơi."
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/bt_addCartAtInfomation"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_circle_button"
+            android:src="@drawable/icon_add_cart" />
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_circle_button"
+            android:src="@drawable/icon_back" />
+<!--1. cái thêm giỏ hàng á m làm sao nó ko che mấy cái size các thứ giúp t vd m vô mấy cái sản phẩm trong 'khác' á nó có nội dung dài dài là nó che hết cả-->
+<!--2. m sửa lại cái số lượng giống với cái dùm t nha oke ko    KHÔNG THÍCH :))thế thhooi     -->
+    </RelativeLayout>
+
+</FrameLayout>
